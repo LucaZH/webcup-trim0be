@@ -55,9 +55,26 @@ pip install -r requirements.txt
 **Configuration :**
 - Crée un fichier `.env` :
 ```ini
-SECRET_KEY=ta_clé_secrète_django
-DATABASE_URL=mysql://user:password@localhost:3306/theendpage
-DEBUG=1
+SECRET_KEY=votre_cle_secrete_django_ici
+
+DEBUG=False
+
+DB_NAME=nom_de_votre_base_de_donnees
+DB_USER=utilisateur_mysql
+DB_PASSWORD=theendpage
+DB_HOST=localhost
+DB_PORT=3306
+
+EMAIL_HOST_USER=votre_email@gmail.com
+EMAIL_HOST_PASSWORD=mot_de_passe_ou_mot_de_passe_application
+
+HOST=http://localhost:3000/
+BACKEND_HOST=http://localhost:8000/api/
+
+GOOGLE_OAUTH_CLIENT_ID=identifiant_client_google
+GOOGLE_OAUTH_CLIENT_SECRET=secret_client_google
+GOOGLE_OAUTH_CALLBACK_URL=http://localhost:8000/auth/callback/
+
 ```
 
 **Base de données :**

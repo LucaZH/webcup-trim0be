@@ -16,7 +16,7 @@
 ## 🛠️ **Technologies utilisées**
 
 - ### **Backend** 
-Django Rest Framework
+Python, Django Rest Framework
 
 - ### **Frontend**  
 React JS , Typescript, Tailwind CSS
@@ -33,7 +33,6 @@ MySQL
 - 🐍 **Python 3.10+**  
 - ⚛️ **Node.js 18+**
 - 🐬 **MySQL 8.0+**  
-- 🧩 **Pipenv** (Gestion des dépendances Python)
 
 
 ## 🛠️ **Installation en local**
@@ -48,7 +47,6 @@ cd ./webcup-trim0be
 **Installation les dépendances**
 ```bash
 cd ./webcup2025-backend 
-pipenv install
 pip install -r requirements.txt
 ```
 
@@ -83,13 +81,14 @@ CREATE DATABASE theendpage;
 ```
 
 ```bash
-pipenv run python manage.py migrate 
-pipenv run python manage.py createsuperuser 
+python manage.py makemigration
+python manage.py migrate 
+python manage.py createsuperuser 
 ```
 
 **Lancer l'application :**
 ```sql
-pipenv run python manage.py runserver 
+python manage.py runserver 
 ```
 
 ### 3. Frontend (React)

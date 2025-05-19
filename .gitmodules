@@ -1,0 +1,6 @@
+[submodule "webcup2025-backend"]
+	path = webcup2025-backend
+	url = git@github.com:LucaZH/webcup2025-backend.git
+[submodule "Webcup2025.front"]
+	path = Webcup2025.front
+	url = git@github.com:KiritoEM/Webcup2025.front.git
